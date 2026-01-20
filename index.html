@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ali Hesham — Digital CV</title>
+  <meta name="description" content="Ali Hesham — Computer Maintenance Technician & Web Developer. Digital CV website." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Go to top">
+        Ali<span>Hesham</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#education">Education</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-btn__icon" id="themeIcon">
+        <i data-lucide="moon" class="i"></i>
+        </span>
+        </button>
+      </div>
+
+      <a class="btn btn--primary nav__cta" href="#contact">Hire Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero__grid">
+
+        <div class="hero__left">
+          <div class="pill reveal">
+            <span class="dot"></span> Available for work
+          </div>
+
+          <h1 class="reveal">
+            Hi, I'm <span class="accent">Ali Hesham</span>
+          </h1>
+
+          <div class="hero__roles reveal">
+            <div class="role">
+              <i data-lucide="monitor" class="i"></i>
+              Web Developer
+            </div>
+            <div class="role">
+              <i data-lucide="wrench" class="i"></i>
+              IT Specialist
+            </div>
+          </div>
+
+          <p class="hero__desc reveal">
+            Specializing in PC maintenance, troubleshooting, and web development.
+            I bridge the gap between hardware reliability and software innovation.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#contact">
+              Contact Me <span class="arrow">→</span>
+            </a>
+            <a class="btn btn--ghost" href="#skills">
+              View Skills <span class="arrow">↓</span>
+            </a>
+          </div>
+
+          <div class="hero__social reveal">
+            <a class="social" href="https://github.com/ego6661" aria-label="GitHub" title="GitHub">
+              <i data-lucide="github" class="i"></i>
+            </a>
+            <a class="social" href="#" aria-label="LinkedIn" title="LinkedIn">
+              <i data-lucide="linkedin" class="i"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__right reveal">
+          <div class="portrait-wrap" id="portraitWrap">
+            <div class="glow" id="glow"></div>
+            <div class="blob" aria-hidden="true"></div>
+
+            <div class="portrait modern">
+              <div class="portrait__ring" aria-hidden="true"></div>
+              <div class="portrait__inner">
+                <img src="assets/profile.jpg" alt="Ali Hesham" class="photo" />
+              </div>
+            </div>
+
+            <div class="float-card fc--top">
+              <div class="fc__icon">
+                <i data-lucide="toolbox" class="i"></i>
+              </div>
+              <div class="fc__text">
+                <div class="fc__small">Expert in</div>
+                <div class="fc__big">Hardware</div>
+              </div>
+            </div>
+
+            <div class="float-card fc--mid">
+              <div class="fc__icon">
+                <i data-lucide="code" class="i"></i>
+              </div>
+              <div class="fc__text">
+                <div class="fc__small">Focus on</div>
+                <div class="fc__big">Web</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-label="About">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>About Me</h2>
+          <p>Get to know me better</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="card about__text reveal">
+            <h3>Reliable & Problem-Solving Focused Technician</h3>
+            <p>
+              I am a dedicated Computer Maintenance Technician with a strong foundation in technical support and web development basics.
+              My expertise covers PC/laptop repairs, peripherals setup, hardware diagnostics, and help desk support.
+            </p>
+            <p>
+              I combine technical know-how with a passion for learning new technologies. Whether it's troubleshooting a complex hardware issue
+              or building a responsive web interface, I approach every challenge with attention to detail and a commitment to excellence.
+            </p>
+
+            <div class="about__stats">
+              <div class="stat">
+                <div class="stat__icon"><i data-lucide="headset" class="i"></i></div>
+                <div class="stat__label">Experience</div>
+                <div class="stat__value">PC Maintenance & Support</div>
+              </div>
+
+              <div class="stat">
+                <div class="stat__icon"><i data-lucide="map-pin" class="i"></i></div>
+                <div class="stat__label">Location</div>
+                <div class="stat__value">Cairo, Egypt</div>
+              </div>
+
+              <div class="stat">
+                <div class="stat__icon"><i data-lucide="calendar-check" class="i"></i></div>
+                <div class="stat__label">Availability</div>
+                <div class="stat__value">Open to Opportunities</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card quote reveal">
+            <div class="quote__icon">
+              <i data-lucide="user-round" class="i"></i>
+            </div>
+            <p class="quote__text">
+              “Technology is best when it brings people together and solves real-world problems.”
+            </p>
+            <div class="quote__line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Technical Skills</h2>
+          <p>My technical proficiency and areas of expertise</p>
+        </div>
+
+        <div class="skills__grid">
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="terminal" class="i"></i></span>
+              <h3>Operating Systems</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">Microsoft Windows</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="cpu" class="i"></i></span>
+              <h3>Hardware</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">PC Maintenance</span>
+              <span class="chip">Laptop Repairs</span>
+              <span class="chip">Peripherals Setup</span>
+              <span class="chip">Networking Equipment</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="wrench" class="i"></i></span>
+              <h3>Troubleshooting</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">PC Troubleshooting</span>
+              <span class="chip">Diagnostics</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="hard-drive" class="i"></i></span>
+              <h3>Installation/Deployment</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">Hardware/Software Installation</span>
+              <span class="chip">Computer Imaging</span>
+              <span class="chip">Deployment</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="database" class="i"></i></span>
+              <h3>Data</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">Data Recovery</span>
+              <span class="chip">Backups</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="shield-check" class="i"></i></span>
+              <h3>Support</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">Help Desk Support</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="code" class="i"></i></span>
+              <h3>Programming</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="box" class="i"></i></span>
+              <h3>Virtualization</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">VMware</span>
+            </div>
+          </article>
+
+          <article class="card skill reveal">
+            <header class="skill__head">
+              <span class="skill__icon"><i data-lucide="briefcase" class="i"></i></span>
+              <h3>Software Tools</h3>
+            </header>
+            <div class="chips">
+              <span class="chip">Microsoft Excel</span>
+              <span class="chip">Google Drive</span>
+              <span class="chip">PowerPoint</span>
+              <span class="chip">Access</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-label="Experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Work Experience</h2>
+          <p>My professional journey so far</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true"></div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__date">
+              <i data-lucide="calendar" class="i"></i>
+              December 2022 – February 2023
+            </div>
+
+            <div class="timeline__dot" aria-hidden="true"></div>
+
+            <article class="card timeline__card">
+              <h3>IT Specialist</h3>
+              <div class="timeline__meta">
+                <span><i data-lucide="building-2" class="i"></i> FAGNOON</span>
+                <span><i data-lucide="map-pin" class="i"></i> New Cairo City</span>
+              </div>
+              <ul>
+                <li>Managed daily IT operations and troubleshooting.</li>
+                <li>Maintained hardware and peripheral devices.</li>
+                <li>Provided technical support to staff.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="timeline__item timeline__item--alt reveal">
+            <div class="timeline__date">
+              <i data-lucide="calendar" class="i"></i>
+              December 2021 – August 2022
+            </div>
+
+            <div class="timeline__dot" aria-hidden="true"></div>
+
+            <article class="card timeline__card">
+              <h3>Technical Support</h3>
+              <div class="timeline__meta">
+                <span><i data-lucide="building-2" class="i"></i> Al Zahraa for Steel and Metals</span>
+                <span><i data-lucide="map-pin" class="i"></i> Cairo</span>
+              </div>
+              <ul>
+                <li>Handled system installations and updates.</li>
+                <li>Performed regular data backups and recovery tasks.</li>
+                <li>Resolved network connectivity issues.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__date">
+              <i data-lucide="calendar" class="i"></i>
+              January 2019 – October 2020
+            </div>
+
+            <div class="timeline__dot" aria-hidden="true"></div>
+
+            <article class="card timeline__card">
+              <h3>Maintenance Technician</h3>
+              <div class="timeline__meta">
+                <span><i data-lucide="building-2" class="i"></i> FARMAWE</span>
+                <span><i data-lucide="map-pin" class="i"></i> Cairo</span>
+              </div>
+              <ul>
+                <li>Diagnosed and repaired PC and laptop hardware.</li>
+                <li>Set up new workstations for employees.</li>
+                <li>Managed software deployment and imaging.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Projects</h2>
+          <p>Showcase of my technical work</p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="card project reveal">
+            <div class="project__img">
+              <i data-lucide="folder-kanban" class="pi"></i>
+            </div>
+            <div class="project__body">
+              <h3>PC Maintenance & Diagnostics Toolkit</h3>
+              <p>A comprehensive documentation and checklist system for standardized PC troubleshooting and maintenance procedures.</p>
+              <div class="chips">
+                <span class="chip">Documentation</span>
+                <span class="chip">Process Design</span>
+                <span class="chip">SOP</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--ghost btn--small" href="#"><i data-lucide="github" class="i"></i> Code</a>
+                <a class="btn btn--primary btn--small" href="#"><i data-lucide="external-link" class="i"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__img">
+              <i data-lucide="ticket" class="pi"></i>
+            </div>
+            <div class="project__body">
+              <h3>Help Desk Ticketing Workflow</h3>
+              <p>Designed a structured workflow for handling support tickets to ensure timely resolution and tracking.</p>
+              <div class="chips">
+                <span class="chip">Process</span>
+                <span class="chip">Excel</span>
+                <span class="chip">Support Tools</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--ghost btn--small" href="#"><i data-lucide="github" class="i"></i> Code</a>
+                <a class="btn btn--primary btn--small" href="#"><i data-lucide="external-link" class="i"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__img">
+              <i data-lucide="pc-case" class="pi"></i>
+            </div>
+            <div class="project__body">
+              <h3>Computer Imaging & Deployment Setup</h3>
+              <p>Automated deployment procedure for setting up new workstations with standard software images.</p>
+              <div class="chips">
+                <span class="chip">Imaging Tools</span>
+                <span class="chip">Windows Deployment</span>
+                <span class="chip">Scripting</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--ghost btn--small" href="#"><i data-lucide="github" class="i"></i> Code</a>
+                <a class="btn btn--primary btn--small" href="#"><i data-lucide="external-link" class="i"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__img">
+              <i data-lucide="layout-template" class="pi"></i>
+            </div>
+            <div class="project__body">
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive personal portfolio website showcasing professional skills and experience.</p>
+              <div class="chips">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--ghost btn--small" href="#"><i data-lucide="github" class="i"></i> Code</a>
+                <a class="btn btn--primary btn--small" href="#"><i data-lucide="external-link" class="i"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education" aria-label="Education">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Education</h2>
+          <p>Academic background and qualifications</p>
+        </div>
+
+        <div class="edu__grid">
+          <article class="card edu reveal">
+            <div class="edu__icon">
+              <i data-lucide="graduation-cap" class="ei"></i>
+            </div>
+            <div class="edu__body">
+              <div class="edu__pill">2021 – Present</div>
+              <h3>CIS University</h3>
+              <p>Dual Major in Computer Science and Business Administration (3rd Year)</p>
+            </div>
+          </article>
+
+          <article class="card edu reveal">
+            <div class="edu__icon">
+              <i data-lucide="school" class="ei"></i>
+            </div>
+            <div class="edu__body">
+              <div class="edu__pill">April 2019 – October 2021</div>
+              <h3>Al-Amiriya Experimental Center</h3>
+              <p>High School Diploma</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Get In Touch</h2>
+          <p>Have a project or question? I'd love to hear from you.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__left reveal">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out for collaborations, job opportunities, or just a friendly chat about technology.</p>
+
+            <div class="contact__card card">
+              <div class="contact__row">
+                <div class="contact__icon"><i data-lucide="phone" class="i"></i></div>
+                <div>
+                  <div class="contact__label">Call Me</div>
+                  <a class="contact__value" href="tel:+201062835408">(+20) 106 283 5408</a>
+                </div>
+              </div>
+
+              <div class="contact__row">
+                <div class="contact__icon"><i data-lucide="mail" class="i"></i></div>
+                <div>
+                  <div class="contact__label">Email Me</div>
+                  <a class="contact__value" href="mailto:ali.hesham992@outlook.com">ali.hesham992@outlook.com</a>
+                </div>
+              </div>
+
+              <div class="contact__row">
+                <div class="contact__icon"><i data-lucide="map-pin" class="i"></i></div>
+                <div>
+                  <div class="contact__label">Location</div>
+                  <div class="contact__value">Cairo, Egypt 11715</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="card contact__form reveal" id="contactForm" action="https://formspree.io/f/xeeezjdj" method="POST">
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" placeholder="Your name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="your@email.com" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" placeholder="What is this regarding?" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">
+              Send Message <span class="arrow">→</span>
+            </button>
+
+            <p class="form__note" id="formNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">DANTY</div>
+          <div class="footer__muted">D4NTY's portfolio</div>
+        </div>
+
+        <div class="footer__right">
+           <a class="footer__link" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
