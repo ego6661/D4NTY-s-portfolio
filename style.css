@@ -248,6 +248,7 @@ body[data-theme="dark"] .float-card{
   border-color:rgba(255,255,255,.12);
 }
 
+
 .card:hover{
   box-shadow:0 26px 60px rgba(16,30,22,.10);
 }
@@ -672,35 +673,72 @@ body[data-theme="dark"] .float-card{
 /* Projects */
 .projects__grid{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:repeat(3, 1fr);
   gap:18px;
 }
+
 .project{
   overflow:hidden;
   transition:transform .18s ease, box-shadow .18s ease;
 }
 .project:hover{transform:translateY(-3px)}
+
 .project__img{
   height:160px;
   background:linear-gradient(180deg, rgba(14,91,63,.08), rgba(14,91,63,.02));
   display:grid;
   place-items:center;
+  overflow:hidden;
+  border-top-left-radius:var(--radius2);
+  border-top-right-radius:var(--radius2);
 }
-.project__body{padding:18px 18px 20px}
+
+/* Image previews */
+.project__img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top;
+  display:block;
+}
+
+/* Typography */
+.project__body{
+  padding:18px 18px 20px;
+}
+
 .project__body h3{
   margin:0 0 8px;
+  font-size:16px;
+  font-weight:800;
   letter-spacing:-.02em;
+  line-height:1.25;
+  color:var(--text);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
+
 .project__body p{
   margin:0 0 12px;
   color:var(--muted);
-  line-height:1.7;
+  font-weight:700;
+  font-size:14px;
+  line-height:1.65;
+
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  line-clamp:3;
+  overflow:hidden;
 }
+
 .project__actions{
   display:flex;
   gap:12px;
   margin-top:14px;
 }
+
 
 /* Education */
 .edu__grid{
